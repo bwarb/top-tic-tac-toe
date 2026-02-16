@@ -1,0 +1,47 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display:grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    cursor:pointer;
+    background-color: white;
+}
+
+.cell:hover {
+    background-color: lightgray;
+}
+
+.gridTopRow {
+    border-top: none;
+}
+
+.gridBottomRow {
+    border-bottom: none;
+}
+
+.gridLeftCol {
+    border-left: none;
+}
+
+.gridRightCol {
+    border-right: none;
+}
+
+.bad , .bad:hover{
+    background-color: red;
+}
+
+.hidden {
+    display:none;
+}
